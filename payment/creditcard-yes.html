@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card - Yes</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <script src="../fucntions.js"></script>
+    <h1>AHCM</h1>
+    <h2>Payment - Credit Card - Yes</h2>
+    <p>I will need to transfer you to our billing department to process the payment but before I do, is there anything else I can help you with?</p>
+    <button onclick="toggleDiv('yes', 'block');">Yes</button>
+    <div id="yes" class="hideable"><br>Answer the concern first before transferring to billing. <br><br></div>
+    <br><br><button onclick="toggleDiv('no', 'block');">No</button>
+    <div id="no" class="hideable"><br>Transfer to billing right away <br><br></div>
+    <script src="../backtostart.js"></script>
+    <script>
+        document.getElementById("no").appendChild(createHomeButton());
+        document.getElementById("yes").appendChild(createHomeButton());
+    </script>
+</body>
+</html>
