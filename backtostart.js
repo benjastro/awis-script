@@ -12,7 +12,7 @@ function createHomeButton() {
 function annotation() {
     let annotation = document.createElement('h1');
     annotation.style.color = red;
-    annotation.innerText = "ANNOTATION!!!";
+    annotation.innerText = "ANNOTATION!!!!";
     return annotation;
 }
 
