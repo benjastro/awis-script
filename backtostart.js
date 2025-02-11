@@ -1,6 +1,6 @@
 
 function createHomeButton() {
-    const homelink = window.location.origin;
+    const homelink = `${window.location.origin}/awis-script/`;
     let homeButton = document.createElement('button');
     homeButton.innerText = "Back to Home";
     homeButton.onclick = () => {
