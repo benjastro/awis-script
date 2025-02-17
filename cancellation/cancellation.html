@@ -7,9 +7,20 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
+    <script src="../functions.js"></script>
     <h1>AHCM</h1>
     <h2>Cancellation</h2>
     <button onclick="location.href='./inactive.html'">Inactive</button>
-    <br><br><button onclick="location.href='./active.html'">Active</button>
+    <br><br><button onclick="toggleDiv('active', 'block')">Active</button>
+    <div id="active" class="hideable">
+        &emsp;<br>
+        &emsp;<button onclick="location.href='./ticket-ac.html'">Ticket already created</button>
+        <br><br>&emsp;<button onclick="toggleDiv('active-active', 'block')">Active</button>
+        <div id="active-active" class="hideable">
+            <br>&emsp;&emsp;<button onclick="location.href='./active-active-outside30days.html'">Outside 30 days</button>
+            <br><br>&emsp;&emsp;<button onclick="location.href='./active-active-within30days.html'">Within 30 days and future active plans</button>
+        </div>
+    </div>
+        
 </body>
 </html>

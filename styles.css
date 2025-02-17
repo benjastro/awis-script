@@ -1,3 +1,29 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#left-panel {
+    overflow-y: scroll;
+    box-sizing: border-box;
+    padding: 6px;
+    min-width: 300px;
+    resize: horizontal;
+    flex: 2 1 300px;
+}
+
+#right-panel {
+    background-color: red;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    padding: 6px;
+    min-width: 300px;
+    resize: horizontal;
+    flex: 1 1 300px;
+}
+
+
 .hideable {
     display: none;
 }
@@ -5,3 +31,4 @@
 .note {
     color: blue;
 }
+

@@ -1,6 +1,6 @@
 
 function createHomeButton() {
-    const homelink = `${window.location.origin}/awis-script/`;
+    let homelink = `${window.location.origin}/awis-script/`;
     let homeButton = document.createElement('button');
     homeButton.innerText = "Back to Home";
     homeButton.onclick = () => {
@@ -18,4 +18,8 @@ function annotation() {
 
 function bodyPutHomeButton() {
     document.body.appendChild(createHomeButton());
+}
+
+function putHomeButton(containerId) {
+    document.getElementById(containerId).appendChild(createHomeButton());
 }
