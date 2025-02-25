@@ -7,44 +7,51 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <h1>AHCM</h1>
-    <h2>Claims</h2>
-    <p>
-        Thank you for calling Claims/Needs Team, on this great day, my name is ____________! I see that you're calling about (claims/needs inquiry, check Voicegain Insight for specifics) and I'm more than happy to assist. To get started, can I have the Dates of Service and Billed Amounts we're reviewing today?
-        <br>(provider gives DOS & Billed Amounts)
-        <br>
-        <br><strong>THIS APPLIES TO SLP/JHS ACCOUNTS ONLY</strong>
-        <br>
-        <br>Perfect! While I locate this information in our system, I want to let you know about our new online portal that allows you to create an account to check the status of claims/needs 24/7 at providerstatus.info
-        <br>You can also check Eligibility and Benefits. Please let me know if you would like assistance logging in for the first time. 
-        <br>
-        <br>Thank you for that information. I'll be placing the call on hold for 2 to 3 minutes to search for the claim details, please hold.
-        <br>
-        <br>Thank you for holding, I now have the results:
-        <br>
-        <br>For date of service ________________ and billed amount of __________, the claim number is __________
-        <br>It was received last _______________. Status of the claims is ________________. 
-        
-    </p>
-    <h3>CLAIM STATUS:</h3>
-    <button onclick="location.href='./in-process.html'">In Process</button>
-    <br><br><button onclick="location.href='./completed.html'">Completed</button>
-    <p>
-        <strong>THIS APPLIES TO CALL WHERE >4 CLAIMS/NEEDS ARE BEING DISCUSSED</strong>
-        <br><br>In order to help manage our waiting times, we are currently discussing up to 5 claims/needs on a single call – for any additional claims/needs, I can get you started on the online portal to make sure you can get the information you need. 
-        <br>
-        <br><strong>PROVIDER CLAIMS/NEEDS PORTAL FAQs:</strong>
-        <br>
-        <br>&emsp;⦁	What is needed for a provider to register?
-        <br>&emsp;&emsp;⦁	The federal tax id number and company email address
-        <br>&emsp;⦁	What will the username be for provider first time registration
-        <br>&emsp;&emsp;⦁	The federal tax id number
-        <br>&emsp;⦁	What will be the password be for provider first time registration?
-        <br>&emsp;&emsp;⦁	The federal tax id number
-        <br>&emsp;⦁	What does it mean if a provider get’s an error message during first registration using their federal tax id#?
-        <br>&emsp;&emsp;⦁	If a provider gets an error message during first time registration using their federal tax id number, this means the federal tax id number and the provider are not registered in our payment database. To correct this the provider will need to contact Blackhawk Claims Service and submit a W-9 for verification.
-        <br>&emsp;⦁	Can a provider see plan benefits ex: copays and plan details?
-        <br>&emsp;&emsp;⦁	No, there are no plan details shown in the portal. Providers can only see claims submission and eligibility
-    </p>
+    <div id="left-panel">
+        <h1>AHCM</h1>
+        <h2>Claims</h2>
+        <p>
+            Thank you for calling Claims/Needs Team, on this great day, my name is ____________! I see that you're calling about (claims/needs inquiry, check Voicegain Insight for specifics) and I'm more than happy to assist. To get started, can I have the Dates of Service and Billed Amounts we're reviewing today?
+            <br>(provider gives DOS & Billed Amounts)
+            <br>
+            <br><strong>THIS APPLIES TO SLP/JHS ACCOUNTS ONLY</strong>
+            <br>
+            <br>Perfect! While I locate this information in our system, I want to let you know about our new online portal that allows you to create an account to check the status of claims/needs 24/7 at providerstatus.info
+            <br>You can also check Eligibility and Benefits. Please let me know if you would like assistance logging in for the first time. 
+            <br>
+            <br>Thank you for that information. I'll be placing the call on hold for 2 to 3 minutes to search for the claim details, please hold.
+            <br>
+            <br>Thank you for holding, I now have the results:
+            <br>
+            <br>For date of service ________________ and billed amount of __________, the claim number is __________
+            <br>It was received last _______________. Status of the claims is ________________. 
+            
+        </p>
+        <h3>CLAIM STATUS:</h3>
+        <button onclick="location.href='./in-process.html'">In Process</button>
+        <br><br><button onclick="location.href='./completed.html'">Completed</button>
+        <p>
+            <strong>THIS APPLIES TO CALL WHERE >4 CLAIMS/NEEDS ARE BEING DISCUSSED</strong>
+            <br><br>In order to help manage our waiting times, we are currently discussing up to 5 claims/needs on a single call – for any additional claims/needs, I can get you started on the online portal to make sure you can get the information you need. 
+            <br>
+            <br><strong>PROVIDER CLAIMS/NEEDS PORTAL FAQs:</strong>
+            <br>
+            <br>&emsp;⦁	What is needed for a provider to register?
+            <br>&emsp;&emsp;⦁	The federal tax id number and company email address
+            <br>&emsp;⦁	What will the username be for provider first time registration
+            <br>&emsp;&emsp;⦁	The federal tax id number
+            <br>&emsp;⦁	What will be the password be for provider first time registration?
+            <br>&emsp;&emsp;⦁	The federal tax id number
+            <br>&emsp;⦁	What does it mean if a provider get’s an error message during first registration using their federal tax id#?
+            <br>&emsp;&emsp;⦁	If a provider gets an error message during first time registration using their federal tax id number, this means the federal tax id number and the provider are not registered in our payment database. To correct this the provider will need to contact Blackhawk Claims Service and submit a W-9 for verification.
+            <br>&emsp;⦁	Can a provider see plan benefits ex: copays and plan details?
+            <br>&emsp;&emsp;⦁	No, there are no plan details shown in the portal. Providers can only see claims submission and eligibility
+        </p>
+    </div>
+    <div id="right-panel"></div>
+    <script src="../functions.js"></script>
+    <script>
+        putSearchEngine("right-panel");
+    </script>
 </body>
 </html>

@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awis Script</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <h1>AHCM</h1>
-    <p>Thank you for calling claims department/member services, my name is ____, I believe you're calling about (state the concern showing in your aircall.)</p>
-    <button onclick="location.href='./member-services.html'">Member Services</button>
-    <br><br><button onclick="location.href='./claims/claims.html'">Claims</button>
+    <div id="left-panel">
+        <h1>AHCM</h1>
+        <p>Thank you for calling claims department/member services, my name is ____, I believe you're calling about (state the concern showing in your aircall.)</p>
+        <button onclick="location.href='./member-services.html'">Member Services</button>
+        <br><br><button onclick="location.href='./claims/claims.html'">Claims</button>
+    </div>
+    <div id="right-panel"></div>
+    <script src="../functions.js"></script>
+    <script>
+        putSearchEngine("right-panel");
+    </script>
 </body>
 </html>

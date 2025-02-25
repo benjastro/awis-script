@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haven't receive ID Card</title>
+    <title>Timely Filing</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <div id="left-panel">
         <h1>AHCM</h1>
-        <h2>ID Card - Haven't receive ID Card</h2>
-        <button onclick="location.href='./haventreceiveidcard/withintimeframe.html'">Within estimated delivery time frame</button>
-        <br><br><button onclick="location.href='./haventreceiveidcard/outside30days.html'">Outside 30 days</button>
+        <h2>Timely Filing</h2>
+        <strong>180 days</strong> This is the time that is allowed for claims to be received from the DOS (Date of Service)
+        <br><br><strong>PROCESSING TIME</strong> is 45-60 Days
+        <br><br>
     </div>
-    <div id="right-panel"></div>
+    <div id="right-panel">
+    </div>
     <script src="../functions.js"></script>
     <script>
+        putHomeButton("left-panel");
         putSearchEngine("right-panel");
     </script>
 </body>

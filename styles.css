@@ -1,7 +1,13 @@
 html, body {
     height: 100%;
     margin: 0;
-    padding: 0;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
 }
 
 #left-panel {
@@ -10,17 +16,17 @@ html, body {
     padding: 6px;
     min-width: 300px;
     resize: horizontal;
-    flex: 2 1 300px;
+    width: 75%;
 }
 
 #right-panel {
-    background-color: red;
     overflow-y: scroll;
     box-sizing: border-box;
-    padding: 6px;
+    padding: 0 6px;
     min-width: 300px;
-    resize: horizontal;
     flex: 1 1 300px;
+    height: 100%;
+    border: 2px solid black;
 }
 
 
@@ -32,3 +38,7 @@ html, body {
     color: blue;
 }
 
+td {
+    vertical-align: top;
+    text-align: left;
+}

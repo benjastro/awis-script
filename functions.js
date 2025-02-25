@@ -10,16 +10,27 @@ function toggleDiv(id, displayShow) {
 
 function createSearchEnginePanel() {
     let panel = document.createElement("div");
-    panel.id = "search-engine-panel";
+    panel.id = "search-panel";
 
     let title = document.createElement("h2");
     title.innerText = "Search"
     panel.appendChild(title);
 
+    let inputPanel = document.createElement("div");
+    inputPanel.style.display = "flex";
+    inputPanel.style.gap = "8px";
+
     let inputBox = document.createElement("input");
     inputBox.type = "text";
 
-    panel.appendChild(inputBox);
+    let searchButton = document.createElement("button");
+    searchButton.id = "search-panel-button";
+    searchButton.innerText = "Submit";
+
+    inputPanel.appendChild(inputBox);
+    inputPanel.appendChild(searchButton);
+
+    panel.appendChild(inputPanel);
     return panel;
 }
 

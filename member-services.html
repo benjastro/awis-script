@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Member Services</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <h1>AHCM</h1>
-    <button onclick="location.href='./cancellation/cancellation.html'">Cancellation</button>
-    <br><br><button onclick="location.href='./payment/payment.html'">Payment</button>
-    <br><br><button onclick="location.href='./change-of-policy/change-of-policy.html'">Change of Policy</button>
-    <br><br><button onclick="location.href='./id-card/id-card.html'">ID Card</button>
-    <br><br><button onclick="location.href='./benefits-inquiry/benefits-inquiry.html'">Benefits inquiry</button>
-    <br><br><button onclick="location.href='./eligibility/eligibility.html'">Eligibility</button>
+    <div id="left-panel">
+        <h1>AHCM</h1>
+        <button onclick="location.href='./cancellation/cancellation.html'">Cancellation</button>
+        <br><br><button onclick="location.href='./payment/payment.html'">Payment</button>
+        <br><br><button onclick="location.href='./change-of-policy/change-of-policy.html'">Change of Policy</button>
+        <br><br><button onclick="location.href='./id-card/id-card.html'">ID Card</button>
+        <br><br><button onclick="location.href='./benefits-inquiry/benefits-inquiry.html'">Benefits inquiry</button>
+        <br><br><button onclick="location.href='./eligibility/eligibility.html'">Eligibility</button>
+    </div>
+    <div id="right-panel"></div>
+    <script src="../functions.js"></script>
+    <script>
+        putSearchEngine("right-panel");
+    </script>
 </body>
 </html>

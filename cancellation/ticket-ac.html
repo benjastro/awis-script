@@ -7,12 +7,19 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <h1>AHCM</h1>
-    <h2>Cancellation - Active - Ticket Already Created</h2>
-    <p>As I see here that the ticket was already created and the cancellation email was already sent out.</p>
-    <script src="../backtostart.js"></script>
+    <div id="left-panel">
+        <h1>AHCM</h1>
+        <h2>Cancellation - Active - Ticket Already Created</h2>
+        <p>As I see here that the ticket was already created and the cancellation email was already sent out.</p>
+        <script src="../backtostart.js"></script>
+        <script>
+            putHomeButton("left-panel");
+        </script>
+    </div>
+    <div id="right-panel"></div>
+    <script src="../functions.js"></script>
     <script>
-        bodyPutHomeButton();
-    </script>
+        putSearchEngine("right-panel");
+    </script> 
 </body>
 </html>
