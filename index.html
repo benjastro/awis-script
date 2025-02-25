@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awis Script</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <h1>AHCM</h1>
-    <button onclick="location.href='./all-green.html'">All Green</button> - No need to verify
-    <div id="1-all-green" class="hideable"></div>
-    <br><br><button>Red</button> - Follow the HIPAA Verification
-    <br><br><button>Partial</button> - Ask only those information in RED Color.
-    <script src="script.js"></script>
+    <div id="left-panel">
+        <h1>AHCM</h1>
+        <button onclick="location.href='./all-green.html'">All Green</button> - No need to verify
+        <div id="1-all-green" class="hideable"></div>
+        <br><br><button onclick="location.href='./all-green.html'">Red</button> - Follow the HIPAA Verification
+        <br><br><button onclick="location.href='./all-green.html'">Partial</button> - Ask only those information in RED Color.
+        <script src="script.js"></script>
+    </div>
+    <div id="right-panel"></div>
+    <script src="../functions.js"></script>
+    <script>
+        putSearchEngine("right-panel");
+    </script>
 </body>
 </html>

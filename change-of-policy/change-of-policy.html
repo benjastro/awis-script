@@ -7,9 +7,16 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <h1>AHCM</h1>
-    <h2>Change of policy</h2>
-    <button onclick="location.href='./no-effect-tier/add-dependent.html'">With no effect on tier</button>
-    <br><br><button onclick="location.href='./tier-change/add-dependent.html'">With tier change</button>
+    <div id="left-panel">
+        <h1>AHCM</h1>
+        <h2>Change of policy</h2>
+        <button onclick="location.href='./no-effect-tier/add-dependent.html'">With no effect on tier</button>
+        <br><br><button onclick="location.href='./tier-change/add-dependent.html'">With tier change</button>
+    </div>
+    <div id="right-panel"></div>
+    <script src="../functions.js"></script>
+    <script>
+        putSearchEngine("right-panel");
+    </script>
 </body>
 </html>

@@ -7,9 +7,16 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <h1>AHCM</h1>
-    <h2>Eligibility</h2>
-    <button onclick="location.href='./active-plan.html'">Plan is active</button>
-    <br><br><button onclick="location.href='./inactive-plan.html'">Plan is inactive</button>
+    <div id="left-panel">
+        <h1>AHCM</h1>
+        <h2>Eligibility</h2>
+        <button onclick="location.href='./active-plan.html'">Plan is active</button>
+        <br><br><button onclick="location.href='./inactive-plan.html'">Plan is inactive</button>
+    </div>
+    <div id="right-panel"></div>
+    <script src="../functions.js"></script>
+    <script>
+        putSearchEngine("right-panel");
+    </script>
 </body>
 </html>

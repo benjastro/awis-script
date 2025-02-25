@@ -7,13 +7,20 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <h1>AHCM</h1>
-    <h2>Cancellation - Inactive</h2>
-    <p>Upon checking the account is already terminated as of ________________ </p>
-    <p class="note">Note: Before ending the call, make sure to check if the member has any other active account by using the name, telephone number and email.</p>
-    <script src="../backtostart.js"></script>
+    <div id="left-panel">
+        <h1>AHCM</h1>
+        <h2>Cancellation - Inactive</h2>
+        <p>Upon checking the account is already terminated as of ________________ </p>
+        <p class="note">Note: Before ending the call, make sure to check if the member has any other active account by using the name, telephone number and email.</p>
+        <script src="../backtostart.js"></script>
+        <script>
+            putHomeButton("left-panel");
+        </script>
+    </div>
+    <div id="right-panel"></div>
+    <script src="../functions.js"></script>
     <script>
-        bodyPutHomeButton();
-    </script>
+        putSearchEngine("right-panel");
+    </script>  
 </body>
 </html>

@@ -7,26 +7,33 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <h1>AHCM</h1>
-    <h2>Benefits Inquiry - Member</h2>
-    <p>
-        "Just to let you know that you can access your member portal to view all of your benefits. It will also let you update your information like your credit card info, address, etc. 
-        <br>Now, regarding your benefits, do you have any specific service or services in mind so I can search for it?." 
-        <br>
-        <br>(Provide the information requested) Is there anything else I can help you with?
-        <br>
-        <br>If no:
-        <br>
-        <br>(Provide a brief summary of what was discussed) Thank you for calling Member Services, have a blessed day!
-    </p>
-    <p class="note">
-        Reminders: 
-        <br>*If the account is still active, please use the information on the member portal in providing their benefits
-        <br>*Remember to advise the member of any waiting period and pre-existing clause usually mentioned on the bottom part of the brochure. 
-    </p>
-    <script src="../backtostart.js"></script>
+    <div id="left-panel">
+        <h1>AHCM</h1>
+        <h2>Benefits Inquiry - Member</h2>
+        <p>
+            "Just to let you know that you can access your member portal to view all of your benefits. It will also let you update your information like your credit card info, address, etc. 
+            <br>Now, regarding your benefits, do you have any specific service or services in mind so I can search for it?." 
+            <br>
+            <br>(Provide the information requested) Is there anything else I can help you with?
+            <br>
+            <br>If no:
+            <br>
+            <br>(Provide a brief summary of what was discussed) Thank you for calling Member Services, have a blessed day!
+        </p>
+        <p class="note">
+            Reminders: 
+            <br>*If the account is still active, please use the information on the member portal in providing their benefits
+            <br>*Remember to advise the member of any waiting period and pre-existing clause usually mentioned on the bottom part of the brochure. 
+        </p>
+        <script src="../backtostart.js"></script>
+        <script>
+            putHomeButton("left-panel");
+        </script>
+    </div>
+    <div id="right-panel"></div>
+    <script src="../functions.js"></script>
     <script>
-        bodyPutHomeButton();
-    </script>
+        putSearchEngine("right-panel");
+    </script>  
 </body>
 </html>
