@@ -1,0 +1,135 @@
+{
+    "1095taxform-1099-ein" : 
+        {
+            "title" : "1095 Tax Form / 1099 / EIN",
+            "description" : "1095 Tax Form / 1099 / EIN",
+            "url" : "https://benjastro.github.io/awis-script/search/1095taxform-1099-ein.html",
+            "tags" : "1095 Tax Form / 1099 / EIN employee identification number Organization Addresses"
+        },
+    "hipaa-form" : 
+        {
+            "title" : "Hipaa form",
+            "description" : "Hipaa form",
+            "url" : "https://benjastro.github.io/awis-script/search/hipaa-form.html",
+            "tags" : "Hipaa form hipaa-form"
+        },
+    "deceased-primary-account-holder" : 
+        {
+            "title" : "Deceased primary account holder",
+            "description" : "Deceased primary account holder",
+            "url" : "https://benjastro.github.io/awis-script/search/deceased-primary-account-holder.html",
+            "tags" : "Deceased primary account holder"
+        },
+    "proof-of-cancellation-coverage-insurance":
+        {
+            "title" : "Proof of cancellation, proof of coverage, proof of insurance",
+            "description" : "Proof of cancellation, proof of coverage, proof of insurance",
+            "url" : "https://benjastro.github.io/awis-script/search/proof-of-cancellation-coverage-insurance.html",
+            "tags" : "Proof of cancellation, proof of coverage, proof of insurance"
+        },
+    "eligibility-request":
+        {
+            "title" : "Eligibility request",
+            "description" : "Eligibility request",
+            "url" : "https://benjastro.github.io/awis-script/search/eligibility-request.html",
+            "tags" : "Eligibility request"
+        },
+    "for-documentation-request":
+        {
+            "title" : "For plan brochure requests or physical documentation requests",
+            "description" : "For plan brochure requests or physical documentation requests (examples policy agreement, receipts etc.)",
+            "url" : "https://benjastro.github.io/awis-script/search/for-documentation-request.html",
+            "tags" : "For plan brochure requests or physical documentation requests (examples policy agreement, receipts etc.)"
+        },
+    "reinstatement":
+        {
+            "title" : "Reinstatement",
+            "description" : "Reinstatement",
+            "url" : "https://benjastro.github.io/awis-script/search/reinstatement.html",
+            "tags" : "reinstatement"
+        },
+    "check-wrong-address":
+        {
+            "title" : "Check recently sent to wrong address",
+            "description" : "Check recently sent to wrong address because member moved",
+            "url" : "https://benjastro.github.io/awis-script/search/check-wrong-address.html",
+            "tags" : "Check recently sent to wrong address because member moved"
+        },
+    "refund-closed-account":
+        {
+            "title" : "Refund on closed account",
+            "description" : "Refund on closed account",
+            "url" : "https://benjastro.github.io/awis-script/search/refund-closed-account.html",
+            "tags" : "Refund on closed account"
+        },
+    "unknown-charges":
+        {
+            "title" : "Unknown charges",
+            "description" : "Unknown Charges",
+            "url" : "https://benjastro.github.io/awis-script/search/unknown-charges.html",
+            "tags" : "Unknown Charges"
+        },
+    "age-restrictions":
+        {
+          "title" : "Age restrictions",
+            "description" : "Age restrictions",
+            "url" : "https://benjastro.github.io/awis-script/search/age-restrictions.html",
+            "tags" : "Age restrictions"  
+        },
+    "bhpi-group-business-accounts":
+        {
+            "title" : "BHPI-Group Business Accounts",
+            "description" : "BHPI-Group Business Accounts",
+            "url" : "https://benjastro.github.io/awis-script/search/bhpi-group-business-accounts.html",
+            "tags" : "BHPI-Group Business Accounts"  
+        },
+    "contact-information":
+        {
+            "title" : "Contact information / ms phonebook / directory",
+            "description" : "Contact information / ms phonebook / directory",
+            "url" : "https://benjastro.github.io/awis-script/search/contact-information.html",
+            "tags" : "Contact information / ms phonebook / directory"  
+        },
+    "eob-request":
+        {
+            "title" : "EOB Request",
+            "description" : "EOB Request",
+            "url" : "https://benjastro.github.io/awis-script/search/eob-request.html",
+            "tags" : "EOB Request"  
+        },
+    "timely-filing":
+        {
+            "title" : "Timely filing",
+            "description" : "Timely filing",
+            "url" : "https://benjastro.github.io/awis-script/search/timely-filing.html",
+            "tags" : "Timely filing"  
+        },
+    "medical-records":
+        {
+            "title" : "Medical records",
+            "description" : "Medical records",
+            "url" : "https://benjastro.github.io/awis-script/search/medical-records.html",
+            "tags" : "Medical records"  
+        },
+    "clearing-house":
+        {
+            "title" : "Clearing house",
+            "description" : "Clearing house",
+            "url" : "https://benjastro.github.io/awis-script/search/clearing-house.html",
+            "tags" : "Clearing house"  
+        },
+    "w9-inquiries":
+        {
+            "title" : "W9 inquiries",
+            "description" : "W9 inquiries",
+            "url" : "https://benjastro.github.io/awis-script/search/w9-inquiries.html",
+            "tags" : "W9 inquiries w9 update"  
+        },
+    "appeals":
+        {
+            "title" : "Appeals",
+            "description" : "Appeals",
+            "url" : "https://benjastro.github.io/awis-script/search/appeals.html",
+            "tags" : "appeals follow up"  
+        }
+    }
