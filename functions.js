@@ -75,7 +75,6 @@ function createResultsContainer(json) {
 
 async function createSearchEnginePanel() {
     let JSON_URL = "https://benjastro.github.io/awis-script/data/searchable.json";
-    JSON_URL = `${window.location.origin}/data/searchable.json`
 
     let panel = document.createElement("div");
     panel.style.display = "flex";
