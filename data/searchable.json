@@ -131,5 +131,96 @@
             "description" : "Appeals",
             "url" : "https://benjastro.github.io/awis-script/search/appeals.html",
             "tags" : "appeals follow up"  
+        },
+    "care-accounts":
+        {
+            "title" : "Care accounts",
+            "description" : "care accounts",
+            "url" : "https://benjastro.github.io/awis-script/search/care-accounts.html",
+            "tags" : "care accounts pnc echo payments zelis payments"
+        },
+    "escheated-checks":
+        {
+            "title" : "Escheated checks",
+            "description" : "escheated checks",
+            "url" : "https://benjastro.github.io/awis-script/search/escheated-checks.html",
+            "tags" : "escheated checks"
+        },
+    "swapped-tax-id-and-npi":
+        {
+            "title" : "Swapped tax ID and NPI",
+            "description" : "swapped tax id and npi",
+            "url" : "https://benjastro.github.io/awis-script/search/swapped-tax-id-and-npi.html",
+            "tags" : "swapped tax id and npi"
+        },
+    "provider-claims-needs-portal-faqs":
+        {
+            "title" : "Provider claims/needs portal faqs",
+            "description" : "provider claims/needs portal faqs",
+            "url" : "https://benjastro.github.io/awis-script/search/provider-claims-needs-portal-faqs.html",
+            "tags" : "provider claims/needs portal faqs"
+        },
+    "member-claims-needs-portal-faqs":
+        {
+            "title" : "Member claims/needs portal faqs",
+            "description" : "member claims/needs portal faqs",
+            "url" : "https://benjastro.github.io/awis-script/search/member-claims-needs-portal-faqs.html",
+            "tags" : "member claims/needs portal faqs"
+        },
+    "no-sale-state":
+        {
+            "title" : "No sale state",
+            "description" : "no sale state",
+            "url" : "https://benjastro.github.io/awis-script/search/no-sale-state.html",
+            "tags" : "no sale state"
+        },
+    "colonoscopy":
+        {
+            "title" : "Colonoscopy",
+            "description" : "colonoscopy",
+            "url" : "https://benjastro.github.io/awis-script/search/colonoscopy.html",
+            "tags" : "colonoscopy"
+        },
+    "mammogram":
+        {
+            "title" : "Mammogram",
+            "description" : "mammogram",
+            "url" : "https://benjastro.github.io/awis-script/search/mammogram.html",
+            "tags" : "mammogram"
+        },
+    "paramount-rx":
+        {
+            "title" : "Paramount RX",
+            "description" : "paramount rx",
+            "url" : "https://benjastro.github.io/awis-script/search/paramount-rx.html",
+            "tags" : "paramount rx"
+        },
+    "cpt-codes":
+        {
+            "title" : "CPT codes - What to say and why we don't take them",
+            "description" : "CPT codes - What to say and why we don't take them",
+            "url" : "https://benjastro.github.io/awis-script/search/cpt-codes.html",
+            "tags" : "cpt codes - What to say and why we don't take them"
+        },
+    "subrogation-process":
+        {
+            "title" : "Subrogation process",
+            "description" : "subrogation process",
+            "url" : "https://benjastro.github.io/awis-script/search/subrogation-process.html",
+            "tags" : "subrogation process"
+        },
+    "law-enforcement-attorney-doi":
+        {
+            "title" : "Law enforcement, attorney and doi",
+            "description" : "law enforcement, attorney and doi",
+            "url" : "https://benjastro.github.io/awis-script/search/law-enforcement-attorney-doi.html",
+            "tags" : "law enforcement, attorney and doi"
+        },
+    "legal-threat":
+        {
+            "title" : "Legal threat",
+            "description" : "legal threat",
+            "url" : "https://benjastro.github.io/awis-script/search/legal-threat.html",
+            "tags" : "legal threat"
         }
     }
