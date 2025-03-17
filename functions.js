@@ -144,3 +144,36 @@ function bodyPutHomeButton() {
 function putHomeButton(containerId) {
     document.getElementById(containerId).appendChild(createHomeButton());
 }
+
+function createbackToTopButton() {
+    backToTopButton = document.createElement("button");
+
+    backToTopButton.innerHTML = "&#8679";
+    backToTopButton.classList.add("back-to-top");
+    // backToTopButton.classList.add("show");
+    backToTopButton.id = "backToTop";
+
+    return backToTopButton;
+}
+
+function putBacktoTopButton(id) {
+    container = document.getElementById(id);
+
+    backToTopButton = createbackToTopButton();
+
+    container.appendChild(backToTopButton);
+
+    container.addEventListener("scroll", () => {
+        console.log(container.scrollTop);
+        if (container.scrollTop > 10) {
+            backToTopButton.classList.add("show");
+        } else {
+            backToTopButton.classList.remove("show");
+        }
+    });
+
+    backToTopButton.addEventListener("click", () => {
+        container.scrollTo({ top: 0, behavior: "smooth" });
+    });
+}
+
