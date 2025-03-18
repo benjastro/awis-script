@@ -53,6 +53,7 @@ function createResultPanel(object) {
 
 function createResultsContainer(json) {
     resultsContainer = document.createElement("div");
+    resultsContainer.id = "search-panel-result-panel";
     resultsContainer.style.display = "flex";
     resultsContainer.style.flexDirection = "column";
     resultsContainer.style.gap = "1px";
@@ -71,6 +72,24 @@ function createResultsContainer(json) {
     }
 
     return resultsContainer;
+}
+
+function searchByTags(query, jsonData) {
+    let results = Object.values(jsonData)
+        .map(item => {
+            let tagsLower = item.tags.toLowerCase();
+            let matchCount = (tagsLower.match(new RegExp(query, "g")) || []).length; // Count occurrences
+
+            return { ...item, matchCount }; // Add match count to item
+        })
+        .filter(item => item.matchCount > 0) // Keep only matches
+        .sort((a, b) => b.matchCount - a.matchCount); // Sort by match count
+
+    if (results.length === 0) {
+        return false;
+    }
+
+    return results;
 }
 
 async function createSearchEnginePanel() {
@@ -95,11 +114,42 @@ async function createSearchEnginePanel() {
     inputBox.type = "text";
 
     let searchButton = document.createElement("button");
-    searchButton.id = "search-panel-button";
+    searchButton.id = "search-panel-search-button";
     searchButton.innerText = "Submit";
+
+    searchButton.onclick = async function() {
+        jsonData = await fetchData(JSON_URL);
+
+        jsonData = searchByTags(inputBox.value, jsonData);
+
+        if (jsonData) {
+            document.getElementById("search-panel-result-panel").remove();
+            resultsContainer = createResultsContainer(jsonData);
+            panel.appendChild(resultsContainer);
+        }
+
+        console.log("Searching...")
+    }
+
+    let resetButton = document.createElement("button");
+    resetButton.id = "search-panel-reset-button";
+    resetButton.innerText = "Reset";
+
+    resetButton.onclick = async function() {
+        inputBox.value = "";
+        jsonData = await fetchData(JSON_URL);
+
+        if (jsonData) {
+            document.getElementById("search-panel-result-panel").remove();
+            resultsContainer = createResultsContainer(jsonData);
+            panel.appendChild(resultsContainer);
+        }
+
+    }
 
     inputPanel.appendChild(inputBox);
     inputPanel.appendChild(searchButton);
+    inputPanel.appendChild(resetButton);
 
     panel.appendChild(inputPanel);
     panel.appendChild(document.createElement("br"))
@@ -109,7 +159,6 @@ async function createSearchEnginePanel() {
         resultsContainer = createResultsContainer(jsonData);
         panel.appendChild(resultsContainer);
     }
-
     
     return panel;
 }
